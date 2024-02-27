@@ -1,0 +1,13 @@
+//route qui donne un token en reponse
+GET http://localhost:3000/auth
+###
+//cette route est rewrited vers / (slash)
+GET http://localhost:3000/voiture
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWF0IjoxNzA5MDM1ODQ5fQ.C66afxURWCp47HRm4A2g6ScMD4mfu5kZiMw_Ba5tArM
+###
+//route vers proxy mais sans rewrite
+GET http://localhost:3000/hello
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWF0IjoxNzA5MDM1ODQ5fQ.C66afxURWCp47HRm4A2g6ScMD4mfu5kZiMw_Ba5tArM
+###
+GET http://localhost:3000/pyapp
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWF0IjoxNzA5MDM1ODQ5fQ.C66afxURWCp47HRm4A2g6ScMD4mfu5kZiMw_Ba5tArM
